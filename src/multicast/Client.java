@@ -10,10 +10,18 @@ import java.net.UnknownHostException;
 import java.util.Date;
 import java.net.*;
 
-
+/**
+ * Classe principale qui représente un client et gère les envois.
+ * @author romain
+ *
+ */
 
 public class Client {
-
+/**
+ * Le main se connecte puis écoute sur le terminal les messages à envoyer.
+ * @param args
+ * @throws IOException
+ */
 	public static void main(String[] args) throws IOException {
 		/**
 		 * Affichage de l'erreur si l'utilisateur oublie d'entrer l'adresse du groupe ou du port 

@@ -5,7 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.MulticastSocket;
-
+/**
+ * Thread gérant la réception des messages
+ * @author romain
+ *
+ */
 public class ThreadClientReception extends Thread {
 	
 	private MulticastSocket s;
@@ -28,7 +32,9 @@ public class ThreadClientReception extends Thread {
 	public void setS(MulticastSocket s) {
 		this.s = s;
 	}
-
+/**
+ * Méthode principale du thread, elle écoute les nouveaux messages sur le socket et les affiche sur le terminal
+ */
 	@Override
 	public void run() {
 		
